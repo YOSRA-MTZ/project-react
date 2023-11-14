@@ -22,24 +22,24 @@ export function ProductList(){
 
     return (<>
       
-        <div className="table-wrapper">
-              <table  className="fl-table">
+        <div class="table-wrapper">
+              <table  class="fl-table">
                 <tr>
-                  <th className="text-center">Name</th>
-                  <th className="text-center">Price</th>
-                  <th className="text-center">Action</th>
+                  <th class="text-center">Name</th>
+                  <th class="text-center">Price</th>
+                  <th class="text-center">Action</th>
                 
                 </tr>
                 <tbody id="tbody"> 
                   
                   {products.map((elem,index)=>(
                     <tr key={index}>
-                      <td className="text-center">{elem.name}</td>
-                      <td className="text-center">{elem.price}</td>
-                      <td className="text-center">
+                      <td class="text-center">{elem.name}</td>
+                      <td class="text-center">{elem.price}</td>
+                      <td class="text-center">
                       {/* Utilisation d'une icône de suppression de FontAwesome */}
-                      <i className="fas fa-trash icon-rouge" onClick={() => deleteProduct(elem._id)}></i>
-                      <i className="fas fa-pencil-alt icon-bleue" onClick={() => deleteProduct(elem._id)}></i>
+                      <i class="fas fa-trash icon-rouge" onClick={() => deleteProduct(elem._id)}></i>
+                      <i class="fas fa-pencil-alt icon-bleue" onClick={() => deleteProduct(elem._id)}></i>
                     </td>
                       </tr>
                   ))}

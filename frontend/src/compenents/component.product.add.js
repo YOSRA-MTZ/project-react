@@ -12,10 +12,10 @@ export function ProductAddForm(){
         addProduct(p);
       }
 
-      return (<>
+      return (<>  
 
-    <div className="form-wrapper">
-        <form onSubmit={(e)=>handlForm(e)}>
+    
+        <form class="design" onSubmit={(e)=>handlForm(e)}>
   
           <label htmlFor= "name"> Name :</label>
           <input type="text" id="name" onChange={(e)=>setName(e.target.value)}/>
@@ -29,8 +29,7 @@ export function ProductAddForm(){
           <input type='reset' value={"Annuler"}/>
   
         </form>
-    </div>
-      
+       
       </>
         
       )
