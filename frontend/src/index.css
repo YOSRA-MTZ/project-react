@@ -112,3 +112,22 @@ input[type=reset]:hover {
   border-radius: 4px;
   cursor: pointer;
 }
+
+/* Ajoutez ces styles dans votre fichier CSS ou dans le style en ligne */
+
+.btn-supprimer {
+  border-radius: 4px;
+  padding: 10px;
+  color: #dc3545; /* Couleur du texte blanc */
+  border: none; /* Supprimer la bordure du bouton */
+
+  margin-right: 5px; /* Marge à droite pour espacement */
+}
+
+.btn-modifier {
+  border-radius: 4px;
+  padding: 10px;
+  color: #007bff; /* Couleur du texte blanc */
+  border: none; /* Supprimer la bordure du bouton */
+  cursor: pointer; /* Curseur pointer au survol */
+}
