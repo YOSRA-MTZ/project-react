@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { deleteProductByID, getAllProducts } from "../services/product.services";
-
+import {Link} from "react-router-dom";
 export function ProductList() {
 
   const [products, setProducts] = useState([]);
@@ -51,6 +51,7 @@ export function ProductList() {
         </tbody>
 
       </table>
+      <Link to={"/products/new"} >Nouveau produit</Link>
     </div>
 
   </>);
