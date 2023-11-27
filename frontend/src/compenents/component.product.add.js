@@ -18,7 +18,7 @@ export function ProductAddForm(){
 
       return (<>
 
-<div className="form-wrapper" >
+<div className="form-wrapper " >
   <form onSubmit={(e) => handlForm(e)}>
     <label className="form-label"htmlFor="name"> Name :</label>
     <input className="form-control"type="text" id="name" onChange={(e) => setName(e.target.value)} />
@@ -29,7 +29,7 @@ export function ProductAddForm(){
     <br />
 
     <input type='submit'className="btn btn-primary" value={"Enregister"} />
-    <input type='reset' className="btn btn-secondary" value={"Annuler"} />
+    <input type='reset' className="btn btn-primary" value={"Annuler"} />
   </form>
 </div>
 
