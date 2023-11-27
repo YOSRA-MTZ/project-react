@@ -12,6 +12,53 @@ code {
     monospace;
 }
 
+
+.fl-table {
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;    
+  background-color: white;
+  margin-top:50px;
+}
+.table-wrapper{
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table td, .fl-table th {
+  text-align: center;
+ 
+  padding: 8px;
+}
+.fl-table th {
+  background-color:  #f5f2f2;
+  font-size: 15px;
+}
+.fl-table tr:nth-child(even) {
+  background: #f5f2f2;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 .fl-table {
   border-radius: 10px;
   font-size: 15px;
@@ -123,7 +170,10 @@ input[type=reset]:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-
+.form-wrapper{
+margin: center;
+padding: 80px;
+}
 /* Ajoutez ces styles dans votre fichier CSS ou dans le style en ligne */
 
 .btn-supprimer {
@@ -138,7 +188,17 @@ input[type=reset]:hover {
 .btn-modifier {
   border-radius: 4px;
   padding: 10px;
-  color: #007bff; /* Couleur du texte blanc */
+  color: rgb(2, 170, 24); /* Couleur du texte blanc */
+  border: none; /* Supprimer la bordure du bouton */
+  cursor: pointer; /* Curseur pointer au survol */
+}
+.btn-ajouter{
+  background-color: #458ba0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 70px;
+  margin-left: 70px;
+  color: rgb(252, 253, 252); /* Couleur du texte blanc */
   border: none; /* Supprimer la bordure du bouton */
   cursor: pointer; /* Curseur pointer au survol */
 }
