@@ -9,7 +9,7 @@ export function AdminLayout(){
                 <div className="container-fluid">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink className={"nav-link texte-color"}>Home</NavLink>   
+                            <NavLink className={"nav-link texte-color"} to={"/home"}>Home</NavLink>   
                         </li>
                         
                         <li className="nav-item">
@@ -17,11 +17,11 @@ export function AdminLayout(){
                         </li>
 
                         <li className="nav-item">
-                            <NavLink className={"nav-link"}>Contacts</NavLink>  
+                            <NavLink className={"nav-link"} to={"/contact"}>Contacts</NavLink>  
                         </li>
 
                         <li className="nav-item"> 
-                            <NavLink className={"nav-link"}>Connexion</NavLink>
+                            <NavLink className={"nav-link"} to={"/connexion"}>Connexion</NavLink>
                         </li>
                     </ul>
 
