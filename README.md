@@ -6,6 +6,8 @@
 <img src="./captures/produits.png">
 <p>Page d'ajout produit</p>
 <img src="./captures/addproduct.png">
+<p>Page de modifier produit</p>
+<img src="./captures/modifier.png">
 <p>Page du contact</p>
 <img src="./captures/contact.png">
 <p>Page du connexion</p>

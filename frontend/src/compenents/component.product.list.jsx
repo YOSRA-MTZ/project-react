@@ -36,15 +36,15 @@ export function ProductList() {
               <td class="text-center">{elem.name}</td>
               <td class="text-center">{elem.price}</td>
               <td class="text-center">
-                {/* Bouton de suppression avec une icône de FontAwesome */}
+                
                 <button class="btn btn-supprimer" onClick={() => deleteProduct(elem._id)}>
                   <i class="fas fa-trash icon-rouge"></i> 
                 </button>
 
-                {/* Bouton de modification avec une icône de FontAwesome */}
-                <button   class="btn btn-modifier" onClick={() => deleteProduct(elem._id)}>
+              
+                <Link to={`/products/edit/${elem._id}`} class="btn btn-modifier" >
                   <i class="fas fa-pencil-alt icon-bleue"></i>
-                </button>
+               </Link>
               </td>
             </tr>
           ))}

@@ -7,12 +7,14 @@ import { AdminLayout } from './compenents/component.admin.layout';
 import { Home } from './compenents/component.home';
 import {Connexion} from'./compenents/component.connexion';
 import {Contact} from './compenents/component.contact';
+import { ProductEdit } from './compenents/component.product.edit';
 function App() {
   return (
     <Routes>
       <Route path="/" element={<AdminLayout/>}>
       <Route path="/products" element={<ProductList />}/> 
       <Route path='/products/new'element={<ProductAddForm/>}/>
+      <Route path='/products/edit/:id'element={<ProductEdit/>}/>
 
       <Route path="/home" element={<Home/>}/> 
       <Route path="/connexion" element={<Connexion/>}/> 
