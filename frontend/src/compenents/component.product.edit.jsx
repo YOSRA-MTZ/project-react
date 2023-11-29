@@ -18,11 +18,11 @@ export function ProductEdit(){
         setName(p.name);
         setPrice(p.price);
     }
-    function handlForm(event){
+    async function handlForm(event){
        
         event.preventDefault();
         const p={"_id":id,"name":name, "price":price}
-        updateProduct(p);
+        await updateProduct(p);
         navigate("/products");
       }
 
@@ -37,7 +37,7 @@ export function ProductEdit(){
     <label className="form-label" htmlFor="price"> Price :</label>
     <input className="form-control"type="number" id="price"value={price} onChange={(e) => setPrice(e.target.value)} />
     <br />
-
+    
     <input type='submit'className="btn btn-primary" value={"Enregister"} />
     <input type='reset' className="btn btn-primary" value={"Annuler"} />
   </form>

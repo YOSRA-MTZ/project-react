@@ -21,12 +21,13 @@ export function ProductList() {
   }
 
   return (<>
-<Link to={"/products/new"} class=" btn btn-ajouter" > <i class="fas fa-plus"></i> Nouveau produit</Link>
+<Link to={"/categories"} class=" btn btn-ajouter" > <i class="fas fa-plus"></i> Nouveau produit</Link>
     <div class="table-wrapper">
       <table class="fl-table">
         <tr>
           <th class="text-center">Name</th>
           <th class="text-center">Price</th>
+          <th class="text-center">Categorie</th>
           <th class="text-center">Action</th>
 
         </tr>
@@ -35,6 +36,7 @@ export function ProductList() {
             <tr key={index}>
               <td class="text-center">{elem.name}</td>
               <td class="text-center">{elem.price}</td>
+              <td class="text-center">{elem.category.name}</td>
               <td class="text-center">
                 
                 <button class="btn btn-supprimer" onClick={() => deleteProduct(elem._id)}>

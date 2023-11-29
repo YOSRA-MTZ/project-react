@@ -8,6 +8,7 @@ import { Home } from './compenents/component.home';
 import {Connexion} from'./compenents/component.connexion';
 import {Contact} from './compenents/component.contact';
 import { ProductEdit } from './compenents/component.product.edit';
+import {CategorieAddForm} from './compenents/component.product.new';
 function App() {
   return (
     <Routes>
@@ -19,7 +20,8 @@ function App() {
       <Route path="/home" element={<Home/>}/> 
       <Route path="/connexion" element={<Connexion/>}/> 
       <Route path="/contact" element={<Contact/>}/> 
-
+      <Route path="/categories" element={<CategorieAddForm/>}/> 
+      
       </Route>
     </Routes>
    
